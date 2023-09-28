@@ -1,1 +1,1 @@
-echo hiiii >> ~/tester/interestingtext.txt
+echo hiiii
