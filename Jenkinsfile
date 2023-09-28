@@ -8,12 +8,12 @@ pipeline{
     }
     stage('Test'){
       steps{
-        sh "touch ~/tester/interestingtext.txt"
+        sh "sh scripts/test.sh"
       }
     }
     stage('Deploy'){
       steps{
-        sh "echo hiiii >> ~/tester/interestingtext.txt"
+        sh "sh scripts/deploy.sh"
       }
     }
   }
