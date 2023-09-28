@@ -3,7 +3,7 @@ pipeline{
   stages{
     stage('Build'){
       steps{
-        sh "mkdir ~/tester || true"
+        sh /scripts/build.sh
       }
     }
     stage('Test'){
