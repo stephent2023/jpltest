@@ -13,7 +13,7 @@ pipeline{
     }
     stage('Deploy'){
       steps{
-        sh "echo hiiii >> ~/tester/interstingtext.txt"
+        sh "echo hiiii >> ~/tester/interestingtext.txt"
       }
     }
   }
