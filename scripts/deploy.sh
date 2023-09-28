@@ -9,4 +9,4 @@ ENV YOUR_NAME stephen
 # Expose the correct port
 EXPOSE 5500
 # Create an entrypoint
-ENTRYPoint ["python","app.py"]' > 'Dockerfile'
+ENTRYPoint ["python","app.py"]' > 'dockerfileexercise/Task1/Dockerfile'
