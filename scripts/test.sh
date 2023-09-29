@@ -1,12 +1,8 @@
-echo '# Use Python 3.6 or later as a base image
-FROM python:3.9
-# Copy contents into image
+echo '# 
+FROM node:latest
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
 COPY . .
-# Install pip dependencies from requirements
-RUN pip install -r requirements.txt
-# Set YOUR_NAME environment variable
-ENV YOUR_NAME stephen
-# Expose the correct port
 EXPOSE 5500
-# Create an entrypoint
-ENTRYPoint ["python","app.py"]' > 'dockerfileexercise/Task1/Dockerfile'
+ENTRYPoint ["npm","start"]' > 'devops-m5-nodeproject/Dockerfile'
