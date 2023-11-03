@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-EXPOSE 5500
+EXPOSE 8501
 ENTRYPoint ["npm","start"]' > 'devops-m5-nodeproject/Dockerfile'
 
 echo '
