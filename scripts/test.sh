@@ -1,5 +1,5 @@
 echo '
-FROM node:latest
+FROM python:latest
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
