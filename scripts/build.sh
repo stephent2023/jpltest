@@ -1,4 +1,6 @@
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
-git clone -b dev https://github.com/Weaverbeaver/Hugo || true
+git clone -b main #### || true
+docker build -t hugorunner:${BUILD_NUMBER} Hugo
+docker run -d -p 8501:8501 --name Container hugorunner:${BUILD_NUMBER}
