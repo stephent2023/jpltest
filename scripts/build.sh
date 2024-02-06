@@ -1,1 +1,1 @@
-wait(1)
+sleep 1
